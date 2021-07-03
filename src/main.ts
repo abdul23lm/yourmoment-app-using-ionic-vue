@@ -1,6 +1,9 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from './router';
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/firestore';
 
 import { IonicVue } from '@ionic/vue';
 
@@ -22,6 +25,21 @@ import '@ionic/vue/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyBAHTwWKwe1ctVSCieaCGAnTKj5ZS1jxFw",
+  authDomain: "yourmoment-ionic-vue.firebaseapp.com",
+  projectId: "yourmoment-ionic-vue",
+  storageBucket: "yourmoment-ionic-vue.appspot.com",
+  messagingSenderId: "113346527401",
+  appId: "1:113346527401:web:5f9ed0d869fb2234ffe9b8"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+
+export const auth = firebase.auth();
+export const db = firebase.firestore();
 
 const app = createApp(App)
   .use(IonicVue)
