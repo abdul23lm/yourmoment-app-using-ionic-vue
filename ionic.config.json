@@ -1,0 +1,8 @@
+{
+  "name": "yourmoment-app-using-ionic-vue",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue",
+  "id": "17012930"
+}

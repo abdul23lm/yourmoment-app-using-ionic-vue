@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "yourmoment-app-using-ionic-vue",
+	"webDir": "dist",
+	"bundledWebRuntime": false
+}
